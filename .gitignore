@@ -1,0 +1,4 @@
+# Ignore sensitive and unnecessary folders
+n8n_data/
+ngrok/
+*.ps1
