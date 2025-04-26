@@ -29,7 +29,27 @@ Since then, the project has evolved significantly — moving from basic automati
   
 smart-assistant/ ├── docker-compose.yml ├── restart-n8n.ps1 # PowerShell script to start n8n with a static webhook ├── startup/ │ └── start_n8n_ngrok.ps1 # Auto-start script for Windows ├── .n8n/ # Configuration files for n8n ├── ngrok/ # ngrok binary and settings ├── n8n_data/ # Persistent data folder for n8n (excluded from Git) └── .gitignore
 
-  
+---
+
+## 🧩 Included Submodules
+
+This project includes external repositories as Git submodules to credit original work and to integrate powerful templates:
+
+- [self-hosted-ai-starter-kit](https://github.com/IntelligenzaArtificiale/self-hosted-ai-starter-kit)  
+  A powerful smart assistant starter framework offering templates and workflows for local AI agents.  
+  Integrated here to extend functionality while fully crediting the original authors.
+
+> Please note:  
+> When cloning this repository, make sure to also initialize and update submodules by using:
+
+```bash
+git clone --recurse-submodules https://github.com/LiadLevy92/Parents-smart-assistant.git
+
+or after cloning:
+
+git submodule update --init --recursive
+This ensures that all submodules are properly loaded and available.
+
 ---
 
 ## 📌 Why I'm sharing this
