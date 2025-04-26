@@ -2,14 +2,15 @@
 
 **Personal smart assistant built with n8n, Docker, Telegram bot, and ngrok**
 
-🧠 **Parents Smart Assistant — Setup Phase**  
-Personal smart assistant project built with n8n, Docker, Telegram Bot and ngrok
+🧠 **Parents Smart Assistant — Setup and Evolution Phase**  
+A personal smart assistant project built with n8n, Docker, Telegram Bot, ngrok — and now preparing for the integration of the Model Context Protocol (MCP) to reach the next level of autonomy.
 
 ---
 
 ## 🛠️ Setup Journey (so far...)
 
-After a wild two-day journey (and a long night ending at 5 AM 😅), the foundation is solid and running smoothly:
+After a wild two-day journey (and a long night ending at 5 AM 😅), the foundation was solid and running smoothly.  
+Since then, the project has evolved significantly — moving from basic automation toward building a real intelligent agent.
 
 ### 🔗 Current Stack
 
@@ -17,42 +18,64 @@ After a wild two-day journey (and a long night ending at 5 AM 😅), the foundat
 ✅ ngrok with a fixed custom domain  
 ✅ Telegram Bot webhook integrated  
 ✅ Full system survives computer restarts  
+✅ Email management integrated (Gmail send/receive/label)  
+✅ Google Calendar scheduling integrated  
+✅ Preparing Google Drive access via MCP servers  
+✅ Preparing dynamic MCP tool integration (web search, memory, scheduling)
 
 ---
 
 ## 📁 Project Structure  
   
-  smart-assistant/ ├── docker-compose.yml ├── restart-n8n.ps1 # PowerShell script to start n8n with a static webhook ├── startup/ │ └── start_n8n_ngrok.ps1 # Auto-start script for Windows ├── .n8n/ # Configuration files for n8n ├── ngrok/ # ngrok binary and settings ├── n8n_data/ # Persistent data folder for n8n (excluded from Git) └── .gitignore  
-    
-      
-      
+smart-assistant/ ├── docker-compose.yml ├── restart-n8n.ps1 # PowerShell script to start n8n with a static webhook ├── startup/ │ └── start_n8n_ngrok.ps1 # Auto-start script for Windows ├── .n8n/ # Configuration files for n8n ├── ngrok/ # ngrok binary and settings ├── n8n_data/ # Persistent data folder for n8n (excluded from Git) └── .gitignore
+
+  
 ---
 
 ## 📌 Why I'm sharing this
 
 This project was born from a real need in my own home — to build a smarter way to help parents stay organized.  
 
-Instead of juggling WhatsApp messages, sticky notes on the fridge, and missed doctor appointments, I wanted to create a personal assistant that works in the background.  
+Instead of juggling WhatsApp messages, sticky notes on the fridge, and missed doctor appointments, I wanted to create a personal assistant that works silently in the background.  
 
-Something that understands natural messages, remembers what needs to be done, and brings peace of mind to everyday chaos.  
+Something that understands natural language, remembers important events, connects to external services, and brings peace of mind to everyday chaos.
 
-By documenting every step publicly — including the mistakes, solutions, and lessons — I hope to:  
+Along the way, I’m documenting every step publicly — including the mistakes, pivots, new discoveries (like MCP 😅), and lessons learned — because I believe in:
 
-- Help others building similar projects  
-- Show how to combine open-source tools into something truly useful  
-- Learn out loud and grow with feedback from the community  
+- Helping others building similar smart systems  
+- Showing how open-source tools can combine into something truly practical  
+- Learning out loud and growing with feedback from the community  
 
-This isn’t just about the code — it’s about building something meaningful and sharing the journey.
+This project isn't just about code — it’s about building something meaningful, real-world tested, and sharing the journey.
+
+---
+
+## 🚀 The MCP Revolution
+
+During the project’s development, I discovered the **Model Context Protocol (MCP)** —  
+a revolutionary framework enabling assistants to connect to a network of intelligent tools and agents dynamically.
+
+Currently, MCP integration is **in progress** — and the goal is to extend the assistant’s capabilities with:
+
+- Dynamic tool calling
+- External knowledge retrieval
+- Intelligent memory graph building
+- Advanced scheduling and contextual task planning
+- Agent-to-Agent (A2A) communication
+
+Exciting updates are coming soon as the assistant evolves into a truly autonomous, extensible agent!
 
 ---
 
 ## 🚧 What's Next?
 
-- Processing natural language tasks from Telegram  
-- Parsing dates, times, reminders  
-- Integration with Google Calendar and daily summary  
-- Token usage tracking and Telegram reporting  
-- Multi-user support for families  
+- Finalize natural language processing from Telegram
+- Full Google Drive integration via MCP server
+- Token usage tracking and Telegram reporting
+- Expand memory capabilities (integrate with Qdrant Vector Database)
+- Multi-user and family profile support
+- Explore Agent-to-Agent (A2A) communication
+- Build a lightweight web UI for future interactions
 
 ---
 
@@ -60,9 +83,6 @@ This isn’t just about the code — it’s about building something meaningful 
 
 This project is evolving, and every idea, insight, or piece of feedback makes it better.  
 
-If you have thoughts, suggestions, or just want to brainstorm ways to improve it — drop them in!  
+If you have thoughts, suggestions, or just want to brainstorm ways to improve it — feel free to share!  
 Let’s build something truly useful, together. 🚀
-
-
-
 
